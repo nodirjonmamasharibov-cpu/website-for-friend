@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Muslima! 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#fff1f5;--bg2:#ece4ff;--card:#ffffff;--ink:#34123f;--muted:#6a4f74;
+  --rose:#e0245e;--rose-deep:#a8153f;--on-rose:#ffffff;--sun:#ffc23d;--teal:#12857b;
+  --line:#f0cfdd;--t1:#ffd9e5;--t2:#fff0b8;--t3:#cdf3ee;--cake:#ffb3cb;--icing:#ffffff;--plate:#e3d6f5;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg1:#1e0f26;--bg2:#2a1740;--card:#2f1b3d;--ink:#fbeaf2;--muted:#d0b6da;
+    --rose:#ff6b9a;--rose-deep:#c93b6d;--on-rose:#2a0f1c;--sun:#ffd25e;--teal:#4fd1c4;
+    --line:#4d2f60;--t1:#5a2a46;--t2:#5c4a1c;--t3:#1e4b49;--cake:#d9769b;--icing:#f6e6ef;--plate:#3d2552;
+  }
+}
+:root[data-theme="dark"]{
+  --bg1:#1e0f26;--bg2:#2a1740;--card:#2f1b3d;--ink:#fbeaf2;--muted:#d0b6da;
+  --rose:#ff6b9a;--rose-deep:#c93b6d;--on-rose:#2a0f1c;--sun:#ffd25e;--teal:#4fd1c4;
+  --line:#4d2f60;--t1:#5a2a46;--t2:#5c4a1c;--t3:#1e4b49;--cake:#d9769b;--icing:#f6e6ef;--plate:#3d2552;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{
+  margin:0;min-height:100vh;color:var(--ink);background:var(--bg1) linear-gradient(160deg,var(--bg1),var(--bg2)) fixed;
+  font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.05rem;line-height:1.65;
+}
+.wrap{max-width:600px;margin:0 auto;padding:28px 18px 56px}
+.cake{display:block;width:min(260px,70%);height:auto;margin:0 auto 8px}
+.cake .wick{fill:var(--rose)}
+#candles g:nth-child(even) .wick{fill:var(--teal)}
+.flame{fill:var(--sun);opacity:0;transform-box:fill-box;transform-origin:50% 100%;transition:opacity .5s}
+.flame.lit{opacity:1;animation:flick 1.1s ease-in-out infinite alternate}
+@keyframes flick{from{transform:scale(1,1) rotate(-3deg)}to{transform:scale(.92,1.1) rotate(3deg)}}
+.card{
+  background:var(--card);border:2px solid var(--line);border-radius:28px;padding:30px 26px;
+  box-shadow:7px 7px 0 var(--line);
+}
+h1,h2,h3{font-family:"Bagel Fat One","Trebuchet MS",system-ui,sans-serif;font-weight:400;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.1rem,8vw,2.9rem)}
+h2{font-size:1.9rem}
+h3{font-size:1.25rem;margin-bottom:.15em}
+h1:focus,h2:focus{outline:none}
+p{margin:0 0 1em}
+.step{color:var(--muted);font-weight:800;margin-bottom:.4em}
+.lead{color:var(--muted)}
+.tiles{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:18px 0 24px}
+.tile{
+  width:54px;height:64px;display:grid;place-items:center;border-radius:16px;
+  font-family:"Bagel Fat One","Trebuchet MS",sans-serif;font-size:2rem;background:var(--t1);
+  border:2px solid var(--line);box-shadow:0 4px 0 var(--line);
+}
+.tile:nth-child(3n+2){background:var(--t2);transform:rotate(3deg)}
+.tile:nth-child(3n+3){background:var(--t3);transform:rotate(-4deg)}
+.tile:nth-child(3n+1){transform:rotate(-2deg)}
+form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+input{
+  flex:1 1 180px;min-width:0;font:inherit;font-weight:800;font-size:1.3rem;letter-spacing:.25em;text-align:center;text-transform:uppercase;
+  color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 14px;
+}
+input::placeholder{letter-spacing:.1em;text-transform:none;font-weight:600;color:var(--muted);opacity:.8}
+.shake{animation:shake .4s}
+@keyframes shake{20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+.btn{
+  font:inherit;font-weight:800;cursor:pointer;color:var(--on-rose);background:var(--rose);border:0;border-radius:999px;
+  padding:13px 28px;box-shadow:0 4px 0 var(--rose-deep);
+}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--rose-deep)}
+.ghost{font:inherit;font-weight:800;cursor:pointer;color:var(--ink);background:none;border:0;text-decoration:underline;text-underline-offset:4px;padding:10px 6px}
+.actions{text-align:center;margin-top:10px}
+.msg{min-height:1.6em;text-align:center;font-weight:600;color:var(--muted);margin:10px 0 0}
+.wish{font-size:1.12rem;max-width:60ch}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.recap{margin-top:26px;padding-top:20px;border-top:2px dashed var(--line)}
+.recap div{margin-bottom:1.1em}
+.recap p{margin:0}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+@media (prefers-reduced-motion:reduce){.flame.lit,.shake{animation:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <svg class="cake" viewBox="0 0 240 140" role="img" aria-label="Birthday cake with five candles that light up as you solve the words">
+    <ellipse cx="120" cy="126" rx="108" ry="11" fill="var(--plate)"/>
+    <g id="candles">
+      <g transform="translate(54 0)"><rect class="wick" x="-4" y="52" width="8" height="38" rx="3"/><path class="flame" d="M0 26C8 36 7 46 0 49C-7 46 -8 36 0 26Z"/></g>
+      <g transform="translate(87 0)"><rect class="wick" x="-4" y="52" width="8" height="38" rx="3"/><path class="flame" d="M0 26C8 36 7 46 0 49C-7 46 -8 36 0 26Z"/></g>
+      <g transform="translate(120 0)"><rect class="wick" x="-4" y="52" width="8" height="38" rx="3"/><path class="flame" d="M0 26C8 36 7 46 0 49C-7 46 -8 36 0 26Z"/></g>
+      <g transform="translate(153 0)"><rect class="wick" x="-4" y="52" width="8" height="38" rx="3"/><path class="flame" d="M0 26C8 36 7 46 0 49C-7 46 -8 36 0 26Z"/></g>
+      <g transform="translate(186 0)"><rect class="wick" x="-4" y="52" width="8" height="38" rx="3"/><path class="flame" d="M0 26C8 36 7 46 0 49C-7 46 -8 36 0 26Z"/></g>
+    </g>
+    <rect x="26" y="90" width="188" height="36" rx="10" fill="var(--cake)"/>
+    <path fill="var(--icing)" d="M26 90Q26 82 36 82H204Q214 82 214 90V94q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13q-4.7 13-9.4 13t-9.4-13Z"/>
+    <g fill="var(--rose)"><rect x="52" y="112" width="8" height="4" rx="2" transform="rotate(-20 56 114)"/><rect x="112" y="115" width="8" height="4" rx="2" transform="rotate(15 116 117)"/><rect x="170" y="112" width="8" height="4" rx="2" transform="rotate(-10 174 114)"/></g>
+    <g fill="var(--teal)"><rect x="84" y="113" width="8" height="4" rx="2" transform="rotate(25 88 115)"/><rect x="142" y="112" width="8" height="4" rx="2" transform="rotate(-25 146 114)"/></g>
+  </svg>
+  <section id="stage" class="card" aria-live="polite"></section>
+</main>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<script>
+var STAGES = [
+  {scr:"THGIL", ans:"LIGHT", title:"Light", text:"Some people enter a room and it gets brighter, not because they are loud, but because they are warm. I wish you always stay that kind of person. May your light never dim when others try to dim it, and may it keep reaching the people who need it most."},
+  {scr:"GEAROUC", ans:"COURAGE", title:"Courage", text:"Courage is not the absence of fear. It is doing the right thing and chasing the hard dream while you are still afraid. I wish you the courage to start things before you feel ready, to say what you mean, and to stand up again after every fall. Each time you do, you become stronger than before."},
+  {scr:"DIFNSERPHI", ans:"FRIENDSHIP", title:"Friendship", text:"A life is measured less by what we own than by the people who walk beside us. I wish you friends who are honest when it’s hard and happy when you win, and a heart that keeps being the kind of friend you already are. Thank you for being a good classmate and a good person to know."},
+  {scr:"HTWGOR", ans:"GROWTH", title:"Growth", text:"Every year is a chapter, not an ending. I wish you a year of learning, of mistakes that teach you something, and of small progress that adds up to big change. May you look back next birthday and be proud of how far you came."},
+  {scr:"MDRSEA", ans:"DREAMS", title:"Dreams", text:"Dream big and then work for it patiently, one day at a time. I wish that the dreams you carry quietly become plans, and the plans become reality. May success find you, and may you enjoy the road as much as the arrival."}
+];
+var OPENING = "Dear Muslima, happy birthday! Today is the day the world got you, and the world has been better for it ever since. You were kind enough to send me beautiful wishes on my birthday, and I wanted to answer with something as thoughtful as what you gave me.";
+var CLOSING = "Muslima, may this year bring you health, peace, laughter, and every good thing you deserve. Once again, happy birthday! 🎂";
+
+var el = document.getElementById("stage");
+var flames = document.querySelectorAll(".flame");
+var i = 0, hints = 0;
+
+function render(html, focusSel){
+  el.innerHTML = html;
+  var f = el.querySelector(focusSel || "h1,h2");
+  if (f) { if (!/INPUT/.test(f.tagName)) f.setAttribute("tabindex","-1"); f.focus({preventScroll:false}); }
+}
+
+function intro(){
+  i = 0; hints = 0;
+  flames.forEach(function(f){ f.classList.remove("lit"); });
+  render('<h1>Happy birthday, Muslima!</h1><p class="wish">' + OPENING + '</p>' +
+    '<p class="lead">Solve five scrambled words. Each word lights a candle and unlocks one wish.</p>' +
+    '<div class="actions"><button class="btn" id="go">Start the puzzle</button></div>');
+  document.getElementById("go").onclick = puzzle;
+}
+
+function puzzle(){
+  var s = STAGES[i]; hints = 0;
+  var tiles = s.scr.split("").map(function(c){ return '<span class="tile" aria-hidden="true">' + c + '</span>'; }).join("");
+  render('<p class="step">Word ' + (i+1) + ' of 5</p><h2>Unscramble the letters</h2>' +
+    '<div class="tiles" role="img" aria-label="Scrambled letters: ' + s.scr.split("").join(" ") + '">' + tiles + '</div>' +
+    '<form id="f" autocomplete="off"><input id="a" maxlength="' + s.ans.length + '" placeholder="Type the word" aria-label="Your answer" autocapitalize="characters" spellcheck="false">' +
+    '<button class="btn" type="submit">Check</button></form>' +
+    '<p class="msg" id="msg"></p><div class="actions"><button class="ghost" id="hint" type="button">Show a hint</button></div>', "#a");
+  var inp = document.getElementById("a"), msg = document.getElementById("msg");
+  document.getElementById("f").onsubmit = function(e){
+    e.preventDefault();
+    if (inp.value.trim().toUpperCase() === s.ans){ flames[i].classList.add("lit"); burst(90); reveal(); }
+    else {
+      inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake");
+      msg.textContent = "Not quite yet. Rearrange the letters and try again.";
+    }
+  };
+  document.getElementById("hint").onclick = function(){
+    hints++;
+    var n = Math.min(hints, 3);
+    msg.textContent = "The word has " + s.ans.length + " letters and starts with " + s.ans.slice(0, n) + ".";
+  };
+}
+
+function reveal(){
+  var s = STAGES[i], last = i === STAGES.length - 1;
+  render('<p class="step">Wish unlocked</p><h2>' + s.title + '</h2><p class="wish">' + s.text + '</p>' +
+    '<div class="actions"><button class="btn" id="nx">' + (last ? "Open the last wish" : "Next word") + '</button></div>', "h2");
+  document.getElementById("nx").onclick = function(){ i++; if (i < STAGES.length) puzzle(); else finale(); };
+}
+
+function finale(){
+  var recap = STAGES.map(function(s){ return '<div><h3>' + s.title + '</h3><p>' + s.text + '</p></div>'; }).join("");
+  render('<h1>Happy birthday, Muslima!</h1><p class="wish">' + CLOSING + '</p>' +
+    '<div class="recap"><h2>Your five wishes</h2>' + recap + '</div>' +
+    '<div class="actions"><button class="ghost" id="again">Play again</button></div>');
+  document.getElementById("again").onclick = intro;
+  burst(220); setTimeout(function(){ burst(160); }, 700);
+}
+
+/* confetti */
+var cv = document.getElementById("fx"), cx = cv.getContext("2d"), parts = [], running = false;
+var COLORS = ["#e0245e","#ffc23d","#12a99c","#8b5cf6","#ff8fb1"];
+function size(){ cv.width = innerWidth; cv.height = innerHeight; }
+size(); addEventListener("resize", size);
+function burst(n){
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  for (var k = 0; k < n; k++){
+    var a = Math.random() * Math.PI * 2, v = 5 + Math.random() * 9;
+    parts.push({x:innerWidth/2, y:innerHeight*0.35, vx:Math.cos(a)*v, vy:Math.sin(a)*v - 5, w:6+Math.random()*6, h:4+Math.random()*5,
+      r:Math.random()*6, vr:(Math.random()-.5)*.4, c:COLORS[k % COLORS.length], life:110 + Math.random()*60});
+  }
+  if (!running){ running = true; requestAnimationFrame(tick); }
+}
+function tick(){
+  cx.clearRect(0, 0, cv.width, cv.height);
+  parts = parts.filter(function(p){ return p.life > 0 && p.y < cv.height + 20; });
+  parts.forEach(function(p){
+    p.vy += .28; p.vx *= .985; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life--;
+    cx.save(); cx.translate(p.x, p.y); cx.rotate(p.r); cx.fillStyle = p.c; cx.fillRect(-p.w/2, -p.h/2, p.w, p.h); cx.restore();
+  });
+  if (parts.length) requestAnimationFrame(tick); else { running = false; cx.clearRect(0, 0, cv.width, cv.height); }
+}
+
+intro();
+</script>
+</body>
+</html>
